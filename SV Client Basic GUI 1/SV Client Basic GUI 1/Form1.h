@@ -1,5 +1,5 @@
 #pragma once
-
+#include "client.h"
 namespace SVClientBasicGUI1 {
 
 	using namespace System;
@@ -34,6 +34,14 @@ namespace SVClientBasicGUI1 {
 				delete components;
 			}
 		}
+	private: System::Windows::Forms::Button^  IDC_MAIN_BUTTON;
+	protected: 
+
+	private: System::Windows::Forms::TextBox^  IDC_EDIT_OUT;
+
+	private: System::Windows::Forms::TextBox^  IDC_EDIT_IN;
+
+	protected: 
 
 	private:
 		/// <summary>
@@ -48,11 +56,47 @@ namespace SVClientBasicGUI1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->components = gcnew System::ComponentModel::Container();
-			this->Size = System::Drawing::Size(300,300);
-			this->Text = L"Form1";
-			this->Padding = System::Windows::Forms::Padding(0);
+			this->IDC_MAIN_BUTTON = (gcnew System::Windows::Forms::Button());
+			this->IDC_EDIT_OUT = (gcnew System::Windows::Forms::TextBox());
+			this->IDC_EDIT_IN = (gcnew System::Windows::Forms::TextBox());
+			this->SuspendLayout();
+			// 
+			// IDC_MAIN_BUTTON
+			// 
+			this->IDC_MAIN_BUTTON->Location = System::Drawing::Point(130, 190);
+			this->IDC_MAIN_BUTTON->Name = L"IDC_MAIN_BUTTON";
+			this->IDC_MAIN_BUTTON->Size = System::Drawing::Size(75, 23);
+			this->IDC_MAIN_BUTTON->TabIndex = 0;
+			this->IDC_MAIN_BUTTON->Text = L"button1";
+			this->IDC_MAIN_BUTTON->UseVisualStyleBackColor = true;
+			// 
+			// IDC_EDIT_OUT
+			// 
+			this->IDC_EDIT_OUT->Location = System::Drawing::Point(53, 71);
+			this->IDC_EDIT_OUT->Name = L"IDC_EDIT_OUT";
+			this->IDC_EDIT_OUT->Size = System::Drawing::Size(100, 20);
+			this->IDC_EDIT_OUT->TabIndex = 1;
+			// 
+			// IDC_EDIT_IN
+			// 
+			this->IDC_EDIT_IN->Location = System::Drawing::Point(146, 119);
+			this->IDC_EDIT_IN->Name = L"IDC_EDIT_IN";
+			this->IDC_EDIT_IN->Size = System::Drawing::Size(100, 20);
+			this->IDC_EDIT_IN->TabIndex = 2;
+			// 
+			// Form1
+			// 
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->ClientSize = System::Drawing::Size(284, 262);
+			this->Controls->Add(this->IDC_EDIT_IN);
+			this->Controls->Add(this->IDC_EDIT_OUT);
+			this->Controls->Add(this->IDC_MAIN_BUTTON);
+			this->Name = L"Form1";
+			this->Text = L"Form1";
+			this->ResumeLayout(false);
+			this->PerformLayout();
+
 		}
 #pragma endregion
 	};
