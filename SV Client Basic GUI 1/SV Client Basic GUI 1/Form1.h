@@ -1,5 +1,6 @@
 #pragma once
 #include "client.h"
+
 namespace SVClientBasicGUI1 {
 
 	using namespace System;
@@ -72,16 +73,18 @@ namespace SVClientBasicGUI1 {
 			// 
 			// IDC_EDIT_OUT
 			// 
-			this->IDC_EDIT_OUT->Location = System::Drawing::Point(53, 71);
+			this->IDC_EDIT_OUT->Location = System::Drawing::Point(146, 71);
+			this->IDC_EDIT_OUT->Multiline = true;
 			this->IDC_EDIT_OUT->Name = L"IDC_EDIT_OUT";
-			this->IDC_EDIT_OUT->Size = System::Drawing::Size(100, 20);
+			this->IDC_EDIT_OUT->Size = System::Drawing::Size(100, 68);
 			this->IDC_EDIT_OUT->TabIndex = 1;
 			// 
 			// IDC_EDIT_IN
 			// 
-			this->IDC_EDIT_IN->Location = System::Drawing::Point(146, 119);
+			this->IDC_EDIT_IN->Location = System::Drawing::Point(40, 71);
+			this->IDC_EDIT_IN->Multiline = true;
 			this->IDC_EDIT_IN->Name = L"IDC_EDIT_IN";
-			this->IDC_EDIT_IN->Size = System::Drawing::Size(100, 20);
+			this->IDC_EDIT_IN->Size = System::Drawing::Size(100, 68);
 			this->IDC_EDIT_IN->TabIndex = 2;
 			// 
 			// Form1
@@ -100,5 +103,6 @@ namespace SVClientBasicGUI1 {
 		}
 #pragma endregion
 	};
+
 }
 
