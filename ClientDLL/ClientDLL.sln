@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClientDll", "ClientDLL\ClientDLL.vcxproj", "{FC24ADB9-7183-4A72-A20C-B67010B71C90}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestControl1", "TestControl1\TestControl1.vcxproj", "{59C2747C-2A31-4DBC-B9B4-886FD2FB76C5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestGui1", "TestGui1\TestGui1.vcxproj", "{3B951DE2-A4C0-45A3-A124-3CB99F213008}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC24ADB9-7183-4A72-A20C-B67010B71C90}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FC24ADB9-7183-4A72-A20C-B67010B71C90}.Debug|Win32.Build.0 = Debug|Win32
+		{FC24ADB9-7183-4A72-A20C-B67010B71C90}.Release|Win32.ActiveCfg = Release|Win32
+		{FC24ADB9-7183-4A72-A20C-B67010B71C90}.Release|Win32.Build.0 = Release|Win32
+		{59C2747C-2A31-4DBC-B9B4-886FD2FB76C5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{59C2747C-2A31-4DBC-B9B4-886FD2FB76C5}.Debug|Win32.Build.0 = Debug|Win32
+		{59C2747C-2A31-4DBC-B9B4-886FD2FB76C5}.Release|Win32.ActiveCfg = Release|Win32
+		{59C2747C-2A31-4DBC-B9B4-886FD2FB76C5}.Release|Win32.Build.0 = Release|Win32
+		{3B951DE2-A4C0-45A3-A124-3CB99F213008}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3B951DE2-A4C0-45A3-A124-3CB99F213008}.Debug|Win32.Build.0 = Debug|Win32
+		{3B951DE2-A4C0-45A3-A124-3CB99F213008}.Release|Win32.ActiveCfg = Release|Win32
+		{3B951DE2-A4C0-45A3-A124-3CB99F213008}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

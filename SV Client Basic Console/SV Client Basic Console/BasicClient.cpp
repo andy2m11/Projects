@@ -109,18 +109,7 @@ int __cdecl main(void)
     memcpy(a,str1.c_str(),str1.size());
 	cout << str1.size() << endl;
 	char sendbuf[] = "This is a Test;";
-//	char msgtype[4];
-//	char addrloc[4];
 	char thebuffer[1008];
-	//msgtype[3] = 'w';
-	//thebuffer[0] = 'w';
-	//thebuffer[1] = ' ';
-	//sendbuf[0] = 'w';
-	//sendbuf[1] = ' ';
-	//sendbuf[2] = ' ';
-	//sendbuf[3] = ' ';
-	//sendbuf[4] = ' ';
-//	char *bufftable[3];
 
 
 		    // Send an initial buffer
