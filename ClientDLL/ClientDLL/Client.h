@@ -28,7 +28,8 @@ namespace ClientDll
 		//Waits for a response from the server
 		static ClientDll_API int recvThis();
 
-
+		//Saves response from the server
+		static ClientDll_API int saveThis(char* fileSaveName);
     };
 
 }
