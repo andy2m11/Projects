@@ -20,6 +20,7 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -75,27 +76,31 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="aquila\transform\AquilaFft.cpp" />
-    <ClCompile Include="aquila\transform\Dct.cpp" />
-    <ClCompile Include="aquila\transform\Dft.cpp" />
-    <ClCompile Include="aquila\transform\FftFactory.cpp" />
-    <ClCompile Include="aquila\transform\Mfcc.cpp" />
-    <ClCompile Include="aquila\transform\OouraFft.cpp" />
+    <ClCompile Include="AquilaFft.cpp" />
     <ClCompile Include="Aquila_mdll.cpp" />
+    <ClCompile Include="Dct.cpp" />
+    <ClCompile Include="Dft.cpp" />
     <ClCompile Include="dllmain.cpp" />
-    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="FftFactory.cpp" />
+    <ClCompile Include="OouraFft.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="aquila\transform.h" />
-    <ClInclude Include="aquila\transform\AquilaFft.h" />
-    <ClInclude Include="aquila\transform\Dct.h" />
-    <ClInclude Include="aquila\transform\Dft.h" />
-    <ClInclude Include="aquila\transform\Fft.h" />
-    <ClInclude Include="aquila\transform\FftFactory.h" />
-    <ClInclude Include="aquila\transform\Mfcc.h" />
-    <ClInclude Include="aquila\transform\OouraFft.h" />
+    <ClInclude Include="AquilaFft.h" />
+    <ClInclude Include="Dct.h" />
+    <ClInclude Include="Dft.h" />
+    <ClInclude Include="Fft.h" />
+    <ClInclude Include="FftFactory.h" />
+    <ClInclude Include="global.h" />
+    <ClInclude Include="OouraFft.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Ooura_fft.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

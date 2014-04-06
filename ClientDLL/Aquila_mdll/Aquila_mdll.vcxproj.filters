@@ -18,31 +18,28 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Aquila_mdll.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="dllmain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="aquila\transform\AquilaFft.cpp">
+    <ClCompile Include="Aquila_mdll.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="aquila\transform\Dct.cpp">
+    <ClCompile Include="AquilaFft.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="aquila\transform\Dft.cpp">
+    <ClCompile Include="Dct.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="aquila\transform\FftFactory.cpp">
+    <ClCompile Include="Dft.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="aquila\transform\Mfcc.cpp">
+    <ClCompile Include="FftFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="aquila\transform\OouraFft.cpp">
+    <ClCompile Include="OouraFft.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -53,29 +50,29 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="aquila\transform\AquilaFft.h">
+    <ClInclude Include="AquilaFft.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="aquila\transform\Dct.h">
+    <ClInclude Include="Dct.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="aquila\transform\Dft.h">
+    <ClInclude Include="Dft.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="aquila\transform\Fft.h">
+    <ClInclude Include="Fft.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="aquila\transform\FftFactory.h">
+    <ClInclude Include="FftFactory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="aquila\transform\Mfcc.h">
+    <ClInclude Include="global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="aquila\transform\OouraFft.h">
+    <ClInclude Include="OouraFft.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="aquila\transform.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Ooura_fft.lib" />
   </ItemGroup>
 </Project>

@@ -11,6 +11,13 @@
 // Windows Header Files:
 #include <windows.h>
 
-
+#define _USE_MATH_DEFINES
 
 // TODO: reference additional headers your program requires here
+#include "OouraFft.h"
+#include "FftFactory.h"
+#include "AquilaFft.h"
+#include "Dct.h"
+#include "Dft.h"
+#include "Fft.h"
+#include "global.h"

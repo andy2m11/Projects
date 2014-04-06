@@ -18,9 +18,9 @@
  * @license http://www.opensource.org/licenses/mit-license.php MIT
  * @since 3.0.0
  */
-#define _USE_MATH_DEFINES
-#include "stdafx.h"
 
+#include "stdafx.h"
+#define _USE_MATH_DEFINES
 #include <cmath>
 #include "Dft.h"
 #include <algorithm>
